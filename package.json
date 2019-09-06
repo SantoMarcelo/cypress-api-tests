@@ -1,0 +1,22 @@
+{
+  "name": "cypress-api-tests",
+  "version": "1.0.0",
+  "description": "automated api test",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantoMarcelo/cypress-api-tests.git"
+  },
+  "author": "marcelo santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SantoMarcelo/cypress-api-tests/issues"
+  },
+  "homepage": "https://github.com/SantoMarcelo/cypress-api-tests#readme",
+  "dependencies": {
+    "cypress": "^3.4.1"
+  }
+}

@@ -1,0 +1,29 @@
+{ "turmas": [
+    {
+      "id": 1,
+      "descricao": "Turma dos millenials",
+      "idHorario": 2,
+      "alunos": [
+        {
+          "idAluno": 1
+        },
+        {
+          "idAluno": 2
+        },
+        {
+          "idAluno": 4
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Turma 90's",
+      "idHorario": 1,
+      "alunos": [
+        {
+          "idAluno": 3
+        }
+      ]
+    }
+  ]
+}
