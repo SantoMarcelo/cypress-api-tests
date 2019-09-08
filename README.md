@@ -1,4 +1,4 @@
-# cypress-api-tests
+# projeto para avaliação de testes em api
 
 # baixar e instalar o server da api:
 
