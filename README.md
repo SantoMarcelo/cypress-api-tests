@@ -2,7 +2,7 @@
 
 # instalar o server da api utilizado para criação dos cenários de teste:
 
-https://github.com/PauloGoncalvesBH/rest-server
+siga os passos em: https://github.com/PauloGoncalvesBH/rest-server
 
 # baixar e instalar o projeto de testes:
 
