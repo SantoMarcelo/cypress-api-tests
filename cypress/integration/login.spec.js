@@ -2,18 +2,11 @@
 
 context('Verificação de login de usuário ', () => {
 
-
-  beforeEach(() => {
-    //recupera o JSON com o novo usuário
-
-  })
-
   function rand(valMin, valMax) {
     return Math.floor(Math.random() * (valMax - valMin));
   }
   //gera um email com valor randomico para não gerar problema de usuário duplicado
   const random = rand(0, 10000)
-  const email = `teste.${random}@test.com`
 
   it('Validar login com novo usuário', () => {
     cy.fixture('usuario_default.json').then((user) => {
@@ -32,8 +25,8 @@ context('Verificação de login de usuário ', () => {
       cy.login(user, false).then((response) => {
         //valida o código do status retornado
         expect(response.status).to.be.eql(400)
-         //valida mensagem de validação
-         expect(response.body.message).to.be.eql("Email ou password incorreto")
+        //valida mensagem de validação
+        expect(response.body.message).to.be.eql("Email ou password incorreto")
       })
     })
   })
@@ -43,8 +36,8 @@ context('Verificação de login de usuário ', () => {
       cy.login(user, false).then((response) => {
         //valida o código do status retornado
         expect(response.status).to.be.eql(400)
-         //valida mensagem de validação
-         expect(response.body.message).to.be.eql("Email ou password incorreto")
+        //valida mensagem de validação
+        expect(response.body.message).to.be.eql("Email ou password incorreto")
       })
     })
   })

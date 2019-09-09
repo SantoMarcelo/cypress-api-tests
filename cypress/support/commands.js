@@ -52,7 +52,7 @@ Cypress.Commands.add('login', (user, failOnStatusCode = true) => {
     return response
   })
 });
-Cypress.Commands.add('tokenValidator', (user, endpoint, token,  failOnStatusCode = true) => {
+Cypress.Commands.add('tokenValidator', (user, endpoint, token, failOnStatusCode = true) => {
   cy.request({
     method: 'POST',
     url: `http://localhost:3000/${endpoint}`,
@@ -64,9 +64,8 @@ Cypress.Commands.add('tokenValidator', (user, endpoint, token,  failOnStatusCode
       password: user.password
     },
     failOnStatusCode: failOnStatusCode
-    
+
   }).then((response) => {
-    console.log('response', response)
     return response
   })
 });
@@ -223,6 +222,6 @@ Cypress.Commands.add('prepareFixture', (file, email, password, log) => {
     content.email = email
     content.password = password
     cy.writeFile(`./cypress/fixtures/${file}`, content)
-    
+
   })
 });

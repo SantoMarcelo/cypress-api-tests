@@ -2,12 +2,6 @@
 
 context('Verificação de registro de novo usuário ', () => {
 
-
-  beforeEach(() => {
-    //recupera o JSON com o novo usuário
-
-  })
-
   function rand(valMin, valMax) {
     return Math.floor(Math.random() * (valMax - valMin));
   }
