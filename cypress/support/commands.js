@@ -52,6 +52,24 @@ Cypress.Commands.add('login', (user, failOnStatusCode = true) => {
     return response
   })
 });
+Cypress.Commands.add('tokenValidator', (user, endpoint, token,  failOnStatusCode = true) => {
+  cy.request({
+    method: 'POST',
+    url: `http://localhost:3000/${endpoint}`,
+    headers: {
+      Authorization: token
+    },
+    body: {
+      email: user.email,
+      password: user.password
+    },
+    failOnStatusCode: failOnStatusCode
+    
+  }).then((response) => {
+    console.log('response', response)
+    return response
+  })
+});
 
 Cypress.Commands.add('getToken', () => {
   cy.request({
