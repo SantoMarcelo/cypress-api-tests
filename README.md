@@ -1,18 +1,8 @@
 # Projeto para Avaliação de Testes em API
 
-# baixar e instalar o server da api:
+# instalar o server da api utilizado para criação dos cenários de teste:
 
-1 - Faça um clone do repositório e acesse o diretório criado pelo clone:
-
-`git clone https://github.com/PauloGoncalvesBH/rest-server.git && cd rest-server`
-
-2 - Execute o comando para instalar as dependências necessárias.
-
-`npm install --production`
-
-3 - Para iniciar o servidor
-
-`npm start`
+https://github.com/PauloGoncalvesBH/rest-server
 
 # baixar e instalar o projeto de testes:
 
