@@ -1,4 +1,4 @@
-# Projeto para Avaliação de Testes em API
+# Projeto para treino de Testes em API com Cypress
 
 # instalar o server da api utilizado para criação dos cenários de teste:
 
