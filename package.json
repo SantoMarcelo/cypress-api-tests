@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/SantoMarcelo/cypress-api-tests#readme",
   "dependencies": {
-    "cypress": "^3.4.1"
+    "cypress": "^15.15.0"
   }
 }
